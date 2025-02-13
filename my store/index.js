@@ -5,13 +5,8 @@ const products = [
   ];
   const cart = {};
   const addToCart = (id) => {
-    if(!cart[id]){
-    cart[id] = 1;
-    console.log(cart);
+    if(!cart[id]) cart[id] = 1;
     showCart();
-    }else if(cart[id]>=1){
-        increment(id)
-    }
   };
   const increment=(id)=>{
     cart[id]++
